@@ -66,6 +66,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Controls\ChooseLanguage.ascx" />
     <Content Include="packages.config" />
     <Content Include="Site1.Master" />
     <Content Include="Controls\WebUserControl1.ascx" />
@@ -94,6 +95,13 @@
     </Compile>
     <Compile Include="Code\BasePage.cs">
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ChooseLanguage.ascx.cs">
+      <DependentUpon>ChooseLanguage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ChooseLanguage.ascx.designer.cs">
+      <DependentUpon>ChooseLanguage.ascx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

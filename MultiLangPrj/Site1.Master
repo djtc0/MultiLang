@@ -22,12 +22,14 @@
             </asp:ContentPlaceHolder>
         </div>
         <div>
+            <asp:ImageButton ID="ImageButton1_EN" CommandArgument="fr" runat="server" OnClick="ImageButton1_Click" />
+            <asp:ImageButton ID="ImageButton2_PT" runat="server" OnClick="ImageButton2_Click" CommandArgument="pt" />
+        </div>
+        <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-
             </asp:ContentPlaceHolder>
         </div>
     </form>
-    <asp:ImageButton ID="ImageButton1" runat="server" OnClick="ImageButton1_Click" />
-    <asp:ImageButton ID="ImageButton2" runat="server" OnClick="ImageButton2_Click" />
-    </body>
+
+</body>
 </html>
