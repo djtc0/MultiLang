@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace MultiLangPrj
+namespace MultiLangPrj.Controls
 {
     public partial class WebUserControl1 : System.Web.UI.UserControl
     {

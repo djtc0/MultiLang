@@ -20,5 +20,15 @@ namespace MultiLangPrj
                 }
             }
         }
+
+        protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
+        {
+
+        }
+
+        protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
+        {
+
+        }
     }
 }

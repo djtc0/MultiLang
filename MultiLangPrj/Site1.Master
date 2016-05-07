@@ -23,8 +23,11 @@
         </div>
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
             </asp:ContentPlaceHolder>
         </div>
     </form>
-</body>
+    <asp:ImageButton ID="ImageButton1" runat="server" OnClick="ImageButton1_Click" />
+    <asp:ImageButton ID="ImageButton2" runat="server" OnClick="ImageButton2_Click" />
+    </body>
 </html>

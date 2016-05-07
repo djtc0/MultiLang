@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="MultiLangPrj.WebForm1" %>
 <%@ Import Namespace="Resources" %>
-<%@ Register Src="~/WebUserControl1.ascx" TagPrefix="uc1" TagName="WebUserControl1" %>
+<%@ Register Src="~/Controls/WebUserControl1.ascx" TagPrefix="uc1" TagName="WebUserControl1" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>

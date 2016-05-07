@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="WebUserControl1.ascx.cs" Inherits="MultiLangPrj.WebUserControl1" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="WebUserControl1.ascx.cs" Inherits="MultiLangPrj.Controls.WebUserControl1" %>
 <br />
 <br />
 USER CONTROL:

@@ -68,7 +68,7 @@
   <ItemGroup>
     <Content Include="packages.config" />
     <Content Include="Site1.Master" />
-    <Content Include="WebUserControl1.ascx" />
+    <Content Include="Controls\WebUserControl1.ascx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -92,7 +92,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resource.en.resx</DependentUpon>
     </Compile>
-    <Compile Include="BasePage.cs">
+    <Compile Include="Code\BasePage.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Global.asax.cs">
@@ -113,11 +113,11 @@
     <Compile Include="WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebUserControl1.ascx.cs">
+    <Compile Include="Controls\WebUserControl1.ascx.cs">
       <DependentUpon>WebUserControl1.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebUserControl1.ascx.designer.cs">
+    <Compile Include="Controls\WebUserControl1.ascx.designer.cs">
       <DependentUpon>WebUserControl1.ascx</DependentUpon>
     </Compile>
   </ItemGroup>

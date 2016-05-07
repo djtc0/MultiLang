@@ -37,6 +37,6 @@ namespace MultiLangPrj {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::MultiLangPrj.WebUserControl1 WebUserControl1;
+        protected global::MultiLangPrj.Controls.WebUserControl1 WebUserControl1;
     }
 }

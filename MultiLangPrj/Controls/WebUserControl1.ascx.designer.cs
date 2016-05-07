@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MultiLangPrj {
+namespace MultiLangPrj.Controls {
     
     
     public partial class WebUserControl1 {

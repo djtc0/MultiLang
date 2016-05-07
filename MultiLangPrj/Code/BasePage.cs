@@ -1,7 +1,7 @@
 ﻿using System.Threading;
 using System.Globalization;
 
-namespace MultiLangPrj
+namespace MultiLangPrj.Code
 {
     ///<summary>
     /// Summary description for BasePage
