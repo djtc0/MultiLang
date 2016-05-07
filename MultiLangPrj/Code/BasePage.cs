@@ -26,6 +26,12 @@ namespace MultiLangPrj.Code
                 language = Request.Form[Request.Form["__EVENTTARGET"]];
             }
 
+            if (Request.Form["__VIEWSTATE"] != null && Request.Form["__VIEWSTATE"].Contains("ImageButton_SelectLanguage_"))
+            {
+                //Set the Language.
+                language = Request.Form[Request.Form["__EVENTTARGET"]];
+            }
+
             //Set the Culture.
             Thread.CurrentThread.CurrentCulture = new CultureInfo(language);
             Thread.CurrentThread.CurrentUICulture = new CultureInfo(language);

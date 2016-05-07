@@ -22,8 +22,8 @@
             </asp:ContentPlaceHolder>
         </div>
         <div>
-            <asp:ImageButton ID="ImageButton1_EN" CommandArgument="fr" runat="server" OnClick="ImageButton1_Click" />
-            <asp:ImageButton ID="ImageButton2_PT" runat="server" OnClick="ImageButton2_Click" CommandArgument="pt" />
+            <asp:ImageButton ID="ImageButton_SelectLanguage_EN" CommandArgument="fr" runat="server" OnClick="ImageButton1_Click" />
+            <asp:ImageButton ID="ImageButton_SelectLanguage_PT" runat="server" OnClick="ImageButton2_Click" CommandArgument="pt" />
         </div>
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">

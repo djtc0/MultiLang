@@ -68,5 +68,14 @@ namespace Resources {
                 return ResourceManager.GetString("String1", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Main info em PT.
+        /// </summary>
+        internal static string String2 {
+            get {
+                return ResourceManager.GetString("String2", resourceCulture);
+            }
+        }
     }
 }

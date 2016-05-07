@@ -3,8 +3,10 @@
 <%@ Register Src="~/Controls/WebUserControl1.ascx" TagPrefix="uc1" TagName="WebUserControl1" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+   
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
+     <a href="WebForm2.aspx">WebForm2.aspx</a><br /><br />
     <asp:Label ID="Label1" Text="<%$Resources:Resource, String1 %>" runat="server" Font-Bold="true" />
     <br />
     <br />
