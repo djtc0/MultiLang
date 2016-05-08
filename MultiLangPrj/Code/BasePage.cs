@@ -19,21 +19,18 @@ namespace MultiLangPrj.Code
                 //Set the Language.
                 language = Request.UserLanguages[0];
             }
-            string lang = string.Empty;//default to the invariant culture
-
             
-
             if (Request.Form["ctl00$HF_CurrentSelectedLanguage"] != null)
             {
                 language = Request.Form["ctl00$HF_CurrentSelectedLanguage"];
             }
 
-            else //look at the cookie
+            else //look at the session
             {
-                HttpCookie cookie = Request.Cookies["Language"];
-                if (cookie != null)
+                
+                if (Session["selectedLanguage"] != null)
                 {
-                    language = cookie.Value;
+                    language = Session["selectedLanguage"].ToString();
                 }
             }
             

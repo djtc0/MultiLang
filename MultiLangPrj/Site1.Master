@@ -25,8 +25,8 @@
             </asp:ContentPlaceHolder>
         </div>
         <div>
-            <asp:ImageButton ID="ImageButton_SelectLanguage_EN" CommandArgument="en" runat="server" ImageUrl="~/images/United-Kingdom-icon.png" OnClick="ImageButton1_EN_Click" OnClientClick="setClientLanguage('en');"/>
-            <asp:ImageButton ID="ImageButton_SelectLanguage_PT" ImageUrl="~/images/Portugal-icon.png" runat="server" OnClick="ImageButton2_PT_Click" CommandArgument="pt" OnClientClick="setClientLanguage('pt');"/>
+            <asp:ImageButton ID="ImageButton_SelectLanguage_EN" CommandArgument="en" runat="server" ImageUrl="~/images/United-Kingdom-icon.png" OnClick="ImageButton_Click" OnClientClick="setClientLanguage('en');"/>
+            <asp:ImageButton ID="ImageButton_SelectLanguage_PT" ImageUrl="~/images/Portugal-icon.png" runat="server" OnClick="ImageButton_Click" CommandArgument="pt" OnClientClick="setClientLanguage('pt');"/>
         </div>
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
