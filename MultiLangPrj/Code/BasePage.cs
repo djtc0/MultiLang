@@ -1,5 +1,6 @@
 ﻿using System.Threading;
 using System.Globalization;
+using System.Web;
 
 namespace MultiLangPrj.Code
 {
@@ -18,20 +19,15 @@ namespace MultiLangPrj.Code
                 //Set the Language.
                 language = Request.UserLanguages[0];
             }
+            string lang = string.Empty;//default to the invariant culture
 
-            //Check if PostBack is caused by Language DropDownList.
-            if (Request.Form["__EVENTTARGET"] != null && Request.Form["__EVENTTARGET"].Contains("ddlLanguages"))
+            HttpCookie cookie = Request.Cookies["Language"];
+            if (cookie != null)
             {
-                //Set the Language.
-                language = Request.Form[Request.Form["__EVENTTARGET"]];
+                language = cookie.Value;
             }
 
-            if (Request.Form["__VIEWSTATE"] != null && Request.Form["__VIEWSTATE"].Contains("ImageButton_SelectLanguage_"))
-            {
-                //Set the Language.
-                language = Request.Form[Request.Form["__EVENTTARGET"]];
-            }
-
+           
             //Set the Culture.
             Thread.CurrentThread.CurrentCulture = new CultureInfo(language);
             Thread.CurrentThread.CurrentUICulture = new CultureInfo(language);

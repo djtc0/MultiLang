@@ -67,6 +67,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Controls\ChooseLanguage.ascx" />
+    <Content Include="images\Portugal-icon-big.jpg" />
+    <Content Include="images\Portugal-icon-small.jpg" />
+    <Content Include="images\Portugal-icon.png" />
+    <Content Include="images\United-Kingdom-icon-big.jpg" />
+    <Content Include="images\United-Kingdom-icon-small.jpg" />
+    <Content Include="images\United-Kingdom-icon.png" />
     <Content Include="packages.config" />
     <Content Include="Site1.Master" />
     <Content Include="Controls\WebUserControl1.ascx" />

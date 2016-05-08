@@ -11,19 +11,19 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:DropDownList ID="ddlLanguages" runat="server" AutoPostBack="true">
-                <asp:ListItem Text="Portuguese" Value="" />
+           <%-- <asp:DropDownList ID="ddlLanguages" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlLanguages_SelectedIndexChanged">
+                <asp:ListItem Text="Portuguese" Value="pt" />
                 <asp:ListItem Text="French" Value="fr" />
-                <asp:ListItem Text="English" Value="en-us" />
+                <asp:ListItem Text="English" Value="en" />
 
-            </asp:DropDownList>
+            </asp:DropDownList>--%>
             <hr />
             <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
             </asp:ContentPlaceHolder>
         </div>
         <div>
-            <asp:ImageButton ID="ImageButton_SelectLanguage_EN" CommandArgument="fr" runat="server" OnClick="ImageButton1_Click" />
-            <asp:ImageButton ID="ImageButton_SelectLanguage_PT" runat="server" OnClick="ImageButton2_Click" CommandArgument="pt" />
+            <asp:ImageButton ID="ImageButton_SelectLanguage_EN" CommandArgument="en" runat="server" ImageUrl="~/images/United-Kingdom-icon.png" OnClick="ImageButton1_EN_Click"/>
+            <asp:ImageButton ID="ImageButton_SelectLanguage_PT" ImageUrl="~/images/Portugal-icon.png" runat="server" OnClick="ImageButton2_PT_Click" CommandArgument="pt" />
         </div>
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
