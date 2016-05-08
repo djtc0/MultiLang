@@ -7,23 +7,26 @@
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <script>
+            function setClientLanguage(language)
+            {
+               //debugger;
+                document.getElementById('<%=HF_CurrentSelectedLanguage.ClientID%>').value = language;
+            }
+        </script>
 </head>
 <body>
     <form id="form1" runat="server">
+        <asp:HiddenField ID="HF_CurrentSelectedLanguage" runat="server" Value="pt" ViewStateMode="Enabled" />
         <div>
-           <%-- <asp:DropDownList ID="ddlLanguages" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlLanguages_SelectedIndexChanged">
-                <asp:ListItem Text="Portuguese" Value="pt" />
-                <asp:ListItem Text="French" Value="fr" />
-                <asp:ListItem Text="English" Value="en" />
-
-            </asp:DropDownList>--%>
+         
             <hr />
             <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
             </asp:ContentPlaceHolder>
         </div>
         <div>
-            <asp:ImageButton ID="ImageButton_SelectLanguage_EN" CommandArgument="en" runat="server" ImageUrl="~/images/United-Kingdom-icon.png" OnClick="ImageButton1_EN_Click"/>
-            <asp:ImageButton ID="ImageButton_SelectLanguage_PT" ImageUrl="~/images/Portugal-icon.png" runat="server" OnClick="ImageButton2_PT_Click" CommandArgument="pt" />
+            <asp:ImageButton ID="ImageButton_SelectLanguage_EN" CommandArgument="en" runat="server" ImageUrl="~/images/United-Kingdom-icon.png" OnClick="ImageButton1_EN_Click" OnClientClick="setClientLanguage('en');"/>
+            <asp:ImageButton ID="ImageButton_SelectLanguage_PT" ImageUrl="~/images/Portugal-icon.png" runat="server" OnClick="ImageButton2_PT_Click" CommandArgument="pt" OnClientClick="setClientLanguage('pt');"/>
         </div>
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">

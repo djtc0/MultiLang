@@ -11,7 +11,7 @@ namespace MultiLangPrj.Code
     {
         protected override void InitializeCulture()
         {
-            string language = "en-us";
+            string language = "pt";
 
             //Detect User's Language.
             if (Request.UserLanguages != null)
@@ -21,13 +21,22 @@ namespace MultiLangPrj.Code
             }
             string lang = string.Empty;//default to the invariant culture
 
-            HttpCookie cookie = Request.Cookies["Language"];
-            if (cookie != null)
+            
+
+            if (Request.Form["ctl00$HF_CurrentSelectedLanguage"] != null)
             {
-                language = cookie.Value;
+                language = Request.Form["ctl00$HF_CurrentSelectedLanguage"];
             }
 
-           
+            else //look at the cookie
+            {
+                HttpCookie cookie = Request.Cookies["Language"];
+                if (cookie != null)
+                {
+                    language = cookie.Value;
+                }
+            }
+            
             //Set the Culture.
             Thread.CurrentThread.CurrentCulture = new CultureInfo(language);
             Thread.CurrentThread.CurrentUICulture = new CultureInfo(language);

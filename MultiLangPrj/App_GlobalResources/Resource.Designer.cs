@@ -79,7 +79,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to é Potuguês.
+        ///   Looks up a localized string similar to é Português.
         /// </summary>
         internal static string String1 {
             get {
