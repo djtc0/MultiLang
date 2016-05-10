@@ -49,6 +49,8 @@ namespace MultiLangPrj
             else
             {
                 HttpCookie cookie = new HttpCookie("Language");
+                cookie.HttpOnly = true;
+                cookie.Expires = DateTime.Now.AddDays(-1);
                 cookie.Value = language;
                 Response.SetCookie(cookie);
             }
