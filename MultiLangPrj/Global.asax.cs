@@ -9,6 +9,7 @@ namespace MultiLangPrj
 {
     public class Global : System.Web.HttpApplication
     {
+	//needed some comments here
         protected void Application_Start(object sender, EventArgs e)
         {
         }
