@@ -18,7 +18,12 @@
     <br />
     Literal:
     <asp:Literal ID="Literal1" runat="server" Text="<%$Resources:Resource, String1 %>"></asp:Literal>
-    
+    <div>
+        <div>
+            from code:
+        </div>
+        <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
+    </div>
      
     <%--Não funciona--%>
     <%--<br />

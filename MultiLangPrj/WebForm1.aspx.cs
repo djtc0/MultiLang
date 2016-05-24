@@ -7,7 +7,7 @@ namespace MultiLangPrj
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Label2.Text = Resources.Resource.String1;
         }
     }
 }
